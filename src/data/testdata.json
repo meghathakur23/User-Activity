@@ -1,0 +1,40 @@
+{
+	"ok": true,
+	"members": [{
+			"id": "W012A3CDE",
+			"real_name": "Egon Spengler",
+			"tz": "America/Los_Angeles",
+			"activity_periods": [{
+					"start_time": "2010-01-01T04:06:07",
+					"end_time": "2010-01-01T05:06:07"
+				},
+				{
+					"start_time": "2010-01-02T03:06:07",
+					"end_time": "2010-01-02T04:06:07"
+				},
+				{
+					"start_time": "2010-01-03T05:06:07",
+					"end_time": "2010-01-03T06:06:07"
+				}
+			]
+		},
+		{
+			"id": "W07QCRPA4",
+			"real_name": "Glinda Southgood",
+			"tz": "Asia/Kolkata",
+			"activity_periods": [{
+					"start_time": "2010-01-02T02:08:07",
+					"end_time": "2010-01-02T04:06:07"
+				},
+				{
+					"start_time": "2010-01-04T03:06:07",
+					"end_time": "2010-01-04T06:06:07"
+				},
+				{
+					"start_time": "2010-01-06T01:06:07",
+					"end_time": "2010-01-06T02:06:07"
+				}
+			]
+		}
+	]
+}
