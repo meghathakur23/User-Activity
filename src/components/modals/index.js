@@ -10,7 +10,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import {Link} from 'react-router-dom'
 
-export default function EditUserForm(props) {
+export default function ActivityPeriods(props) {
   const [open, setOpen] = React.useState(false);
   const { id, real_name, activity_periods } = props.current_user
   

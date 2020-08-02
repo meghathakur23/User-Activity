@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Paper from '@material-ui/core/Paper';
 import { ViewState } from '@devexpress/dx-react-scheduler';
 import {
@@ -14,7 +14,7 @@ const NEW_KEYS = Object.freeze({
   end_time: 'endDate'
 })
 
-export default function  Callender(props){
+export default function  Calender(props){
   let dataSets = []
   const { activity_periods } = props.location
   const history = useHistory()
@@ -22,13 +22,14 @@ export default function  Callender(props){
     if (!activity_periods) {
       history.push('/')      
     }
-  }, [])
-  activity_periods && activity_periods.map(item => {
+  })
+  activity_periods && activity_periods.map((item)=>{
     const newItem = {};
     Object.keys(item).forEach(key => {
       newItem[NEW_KEYS[key]] = moment(item[[key]]).format('YYYY-MM-DDTHH:mm')
     })
     dataSets.push(newItem)
+    return null
   })
   return(
     <Paper>

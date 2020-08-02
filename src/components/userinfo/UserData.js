@@ -8,7 +8,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Grid from "@material-ui/core/Grid";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import EditUserForm from "../../modals/editUserForm/index";
+import ActivityPeriods from "../modals";
 
 const useStyles = makeStyles((theme) => ({
   nested: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function UserCardView(props) {
+export default function UserData(props) {
   const classes = useStyles();
   const { user_details, ...other } = props;
   const { id, real_name, tz } = user_details;
@@ -41,7 +41,7 @@ export default function UserCardView(props) {
           </Grid>
           <Grid item xs={3}>
             <ListItemText>
-              <EditUserForm current_user={user_details} {...other} />
+                <ActivityPeriods current_user={user_details} {...other}/>
             </ListItemText>
           </Grid>
           <Grid item xs={3}>

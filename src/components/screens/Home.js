@@ -1,9 +1,9 @@
 import Container from '@material-ui/core/Container';
-import UserCardView from "../views/UserCardView"
 import { Paper } from '@material-ui/core';
 import React, { Component } from 'react';
 
-import data from "../../data/testdata.json"
+import data from "../../config/config.json"
+import UserData from '../userinfo/UserData';
 
 class Home extends Component {
     render() {
@@ -13,7 +13,7 @@ class Home extends Component {
                     !user._deleted && ( 
                         <Paper elevation={0} key={i}>
                             <Container fixed >
-                                <UserCardView user_details={user} />
+                                <UserData user_details={user} />
                             </Container>
                         </Paper>
                     )
